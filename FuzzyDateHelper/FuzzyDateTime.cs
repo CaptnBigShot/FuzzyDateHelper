@@ -24,7 +24,7 @@ namespace FuzzyDateHelper
 
         private static readonly DateTimeRegexPattern XYearsAgoPattern = new DateTimeRegexPattern
         (
-            @"^^([0-9]\d*) years ago$",
+            @"^([0-9]\d*) years ago$",
             delegate (Match m)
             {
                 var numOfYears = int.Parse(m.Groups[1].Value);
